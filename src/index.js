@@ -31,6 +31,6 @@ app.use('/', router)
 app.use(notFound)
 app.use(errorHandler)
 
-app.listen(port, () =>
+app.listen(port, () => {
     logger.info(`Server running on port ${port}`)
-    )
+})
