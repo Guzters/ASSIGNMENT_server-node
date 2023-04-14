@@ -17,9 +17,10 @@ const app = express()
 
 app.use(
     basicAuth({
-    users: { [process.env.ADMIN_USER]: process.env.ADMIN_PASSWORD }
-}),
+    users: { [process.env.ADMIN_USER]: process.env.ADMIN_PASSWORD }, 
+    }),
 )
+
 app.use(morgan(process.env.MORGAN_LOG))
 app.use(cors({ origin: process.env.ORIGIN }))
 app.use(helmet())
