@@ -1,4 +1,4 @@
-import './utils/dotenv'
+import './utils/config'
 
 import express from 'express'
 import morgan from 'morgan'
@@ -16,9 +16,9 @@ const port = Number(process.env.PORT)
 const app = express()
 
 app.use(
-    basicAuth({
-    users: { [process.env.ADMIN_USER]: process.env.ADMIN_PASSWORD }, 
-    }),
+  basicAuth({
+    users: { [process.env.ADMIN_USER]: process.env.ADMIN_PASSWORD },
+  }),
 )
 
 app.use(morgan(process.env.MORGAN_LOG))
