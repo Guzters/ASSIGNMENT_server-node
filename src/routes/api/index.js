@@ -6,7 +6,7 @@ import persons from './persons'
 import companies from './companies'
 import departments from './departments'
 import employees from './employees'
-import DnDCharacters from './DnDCharacters'
+import dndcharacters from './DnDCharacters'
 
 const router = Router()
 
@@ -24,6 +24,6 @@ router.use('/persons', persons)
 router.use('/companies', companies)
 router.use('/departments', departments)
 router.use('/employees', employees)
-router.use('/DnDCharacters', DnDCharacters)
+router.use('/dndcharacters', dndcharacters)
 
 export default router
