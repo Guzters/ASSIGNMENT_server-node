@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 import db from '../utils/db'
 
-export const getDnDChars = async () => db.dnDCharacters.findFirst()
+export const getDnDChars = async () => db.dnDCharacters.findMany()
 
 export const getDnDChar = async (id) => 
 db.dndcharacters.findUnique({
