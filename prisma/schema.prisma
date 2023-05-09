@@ -39,3 +39,22 @@ model Employee {
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
 }
+
+model DnDCharacter {
+  characterId    String @id @default(uuid())
+  charName       String
+  charClass      String
+  charRace       String
+  charBackground String
+  charAlignment  String
+  charLevel      Int
+  hpStat         Int
+  acStat         Int
+  profStat       Int
+  strScore       Int
+  dexScore       Int
+  conScore       Int
+  intScore       Int
+  wisScore       Int
+  chaScore       Int
+}

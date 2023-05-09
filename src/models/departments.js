@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import db from '../utils/db'
 
 export const getDepartments = async () => db.department.findMany()
